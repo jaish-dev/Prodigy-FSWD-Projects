@@ -20,7 +20,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: https://user-authentication-system-server.onrender.com,
+    origin: [
+    "http://localhost:5173", 
+    "https://user-authentication-system-server.onrender.com"
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
