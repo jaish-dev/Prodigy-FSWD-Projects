@@ -17,8 +17,9 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+
 app.use(cors({
-  origin: 'http://localhost:5173', // Adjust this in production
+  origin: https://user-authentication-system-server.onrender.com,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
