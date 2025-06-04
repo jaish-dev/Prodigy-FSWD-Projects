@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     origin: [
     "http://localhost:5173", 
-    "https://user-authentication-system-server.onrender.com"
+    "https://full-stack-web-development-projects.onrender.com"
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
