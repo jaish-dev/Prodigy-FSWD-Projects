@@ -21,7 +21,7 @@ function Signup() {
       })
       .catch(err => console.log(err));
   };*/
-   axios.post('https://user-authentication-system-server.onrender.com', { name, email, password })
+   axios.post('https://user-authentication-system-server.onrender.com/Signup', { name, email, password })
       .then(result => {
         console.log(result);
         navigate('/Login');
