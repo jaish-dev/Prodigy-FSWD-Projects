@@ -31,10 +31,7 @@ if (!DB_URI) {
   process.exit(1);
 }
 
-mongoose.connect(DB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(DB_URI)
   .then(() => {
     console.log("Connected to MongoDB Atlas");
     app.listen(3001, () => {
