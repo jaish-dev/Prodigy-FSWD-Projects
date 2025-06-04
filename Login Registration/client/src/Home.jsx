@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/home");
+        const response = await axios.get("https://user-authentication-system-server.onrender.com/home");
         if (response.data.message === "Welcome to Home") {
           setUser(response.data.user);
         }
