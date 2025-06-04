@@ -13,7 +13,15 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:3001/Signup', { name, email, password })
+ /*   axios.post('http://localhost:3001/Signup', { name, email, password })
+      .then(result => {
+        console.log(result);
+        navigate('/Login');
+        alert("Registration Successful! Please Login.");
+      })
+      .catch(err => console.log(err));
+  };*/
+   axios.post('https://user-authentication-system-server.onrender.com', { name, email, password })
       .then(result => {
         console.log(result);
         navigate('/Login');
@@ -21,7 +29,7 @@ function Signup() {
       })
       .catch(err => console.log(err));
   };
-
+    
   return (
     <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
       <div className="bg-white p-3 rounded w-25">
